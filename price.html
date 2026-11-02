@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://lomindeks.veridok.ru/price.html">
+<title>Цена — цены на лом и заявки на партии</title>
+<meta name="description" content="Цена в месяц: еженедельная сводка закупочных цен на лом по регионам России и заявки на продажу партий лома в выбранных регионах.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Цены и партии лома</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Цены на лом по регионам каждую неделю и заявки на продажу партий в ваших регионах.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>Цены по регионам</b><span>4 900 ₽ в месяц: сводка цен по видам лома в выбранных регионах.</span><br><a class="btn" href="pay.html?plan=ceny" data-ev="payment_click click_pay_ceny">Оплатить — 4 900 ₽</a></div>
+      <div class="card"><b>Цены и заявки на партии</b><span>7 900 ₽ в месяц: сводка цен и заявки на продажу партий в ваших регионах.</span><br><a class="btn" href="pay.html?plan=ceny_partii" data-ev="payment_click click_pay_ceny_partii">Оплатить — 7 900 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Сводка опубликованных цен на лом и заявок продавцов. Ориентир для решения, а не биржевая котировка.</p>
+</div></footer>
+
+</body>
+</html>
