@@ -8,6 +8,10 @@
 <meta name="description" content="Для покупателей лома: закупочные цены на чёрный и цветной лом по регионам России каждую неделю и заявки на продажу партий в ваших регионах.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Цены и партии лома</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Цены и партии лома</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Цены на лом по регионам и новые партии на продажу — в одной сводке каждую неделю</h1>
-    <p class="sub">Для заготовителей, переработчиков и пунктов приёма, которые покупают лом: сводка закупочных цен на чёрный и цветной лом по регионам России и заявки на продажу партий в регионах, которые вы выбрали.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для заготовителей, переработчиков и пунктов приёма</p>
+      <h1 class="rise" style="--i:1" data-len="long">Цены на лом по регионам и новые партии на продажу&nbsp;<span class="soft">— в одной сводке каждую неделю</span></h1>
+      <p class="rise" style="--i:2">Для заготовителей, переработчиков и пунктов приёма, которые покупают лом: сводка закупочных цен на чёрный и цветной лом по регионам России и заявки на продажу партий в регионах, которые вы выбрали.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" font-weight="600" fill="#0a1524">Цены на лом</text><line x1="120" y1="210" x2="1080" y2="210" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="292" font-size="32" fill="#0a1524">Партии на продажу</text><rect x="130" y="350" width="44" height="44" rx="8" fill="#12397a" /><text x="200" y="382" font-size="32" fill="#0a1524">Ваши регионы</text><rect x="130" y="450" width="300" height="22" rx="8" fill="#dde2ea" /><rect x="130" y="500" width="220" height="22" rx="8" fill="#b9c3d2" /><rect x="130" y="550" width="260" height="22" rx="8" fill="#dde2ea" /><rect x="700" y="260" width="370" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="330" font-size="34" font-weight="600" fill="#0a1524">Чёрный лом</text><rect x="750" y="470" width="50" height="150" rx="8" fill="#12397a" /><rect x="830" y="530" width="50" height="90" rx="8" fill="#ffffff" /><rect x="910" y="420" width="50" height="200" rx="8" fill="#b9c3d2" /><rect x="990" y="550" width="50" height="70" rx="8" fill="#ffffff" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Которые покупают лом</dd></div>
+      <div><dt>Сводка</dt><dd>Закупочных цен</dd></div>
+      <div><dt>Неделя</dt><dd>Раз в неделю</dd></div>
+      <div><dt>Доступ</dt><dd>Ранний доступ</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Цены по регионам</b><span>Закупочные цены по видам лома в каждом регионе.</span><br><a class="btn" href="price.html" data-ev="feature_ceny">Мне это нужно</a></div>
-      <div class="card"><b>Как менялась цена</b><span>Неделя к неделе: где цена выросла, где упала.</span><br><a class="btn" href="price.html" data-ev="feature_dinamika">Мне это нужно</a></div>
-      <div class="card"><b>Партии на продажу</b><span>Заявки продавцов: вид лома, объём, регион.</span><br><a class="btn" href="price.html" data-ev="feature_partii">Мне это нужно</a></div>
-      <div class="card"><b>Ваши регионы</b><span>Только те регионы и виды лома, что вам нужны.</span><br><a class="btn" href="price.html" data-ev="feature_region">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="60" width="640" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" font-weight="600" fill="#0a1524">Цены по регионам</text><text x="120" y="190" font-size="30" fill="#566174">по видам лома</text><line x1="140" y1="470" x2="660" y2="470" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="160" y="310" width="70" height="160" rx="8" fill="#b9c3d2" /><rect x="280" y="370" width="70" height="100" rx="8" fill="#dde2ea" /><rect x="400" y="260" width="70" height="210" rx="8" fill="#12397a" /><rect x="520" y="390" width="70" height="80" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Цены по регионам</h3><p>Закупочные цены по видам лома в каждом регионе.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_ceny">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="80" y="110" font-size="32" font-weight="600" fill="#0a1524">Как менялась цена</text><text x="80" y="160" font-size="30" fill="#566174">Неделя к неделе</text><rect x="80" y="200" width="250" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="110" y="240" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="110" y="280" width="140" height="18" rx="8" fill="#b9c3d2" /><rect x="110" y="320" width="160" height="18" rx="8" fill="#12397a" /><rect x="470" y="200" width="250" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="500" y="240" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="500" y="280" width="150" height="18" rx="8" fill="#dfe8f7" /><rect x="500" y="320" width="120" height="18" rx="8" fill="#b9c3d2" /><line x1="330" y1="249" x2="470" y2="249" fill="none" stroke="#dde2ea" stroke-width="3" /><line x1="330" y1="289" x2="470" y2="289" fill="none" stroke="#dde2ea" stroke-width="3" /><line x1="330" y1="329" x2="470" y2="329" fill="none" stroke="#12397a" stroke-width="3" /></svg></div>
+        <h3>Как менялась цена</h3><p>Неделя к неделе: где цена выросла, где упала.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_dinamika">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="60" width="640" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" font-weight="600" fill="#0a1524">Партии на продажу</text><text x="120" y="195" font-size="30" fill="#566174">Заявки продавцов</text><rect x="140" y="250" width="44" height="44" rx="8" fill="#dfe8f7" /><polyline points="150,272 158,284 174,260" fill="none" stroke="#12397a" stroke-width="4" stroke-linecap="round" /><rect x="210" y="262" width="300" height="20" rx="8" fill="#dde2ea" /><rect x="140" y="330" width="44" height="44" rx="8" fill="#dfe8f7" /><polyline points="150,352 158,364 174,340" fill="none" stroke="#12397a" stroke-width="4" stroke-linecap="round" /><rect x="210" y="342" width="240" height="20" rx="8" fill="#b9c3d2" /><rect x="140" y="410" width="44" height="44" rx="8" fill="#eef2f7" stroke="#dde2ea" stroke-width="3" /><rect x="210" y="422" width="270" height="20" rx="8" fill="#dde2ea" /></svg></div>
+        <h3>Партии на продажу</h3><p>Заявки продавцов: вид лома, объём, регион.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_partii">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="60" width="640" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" font-weight="600" fill="#0a1524">Ваши регионы</text><text x="120" y="195" font-size="30" fill="#566174">что вам нужны</text><line x1="160" y1="340" x2="640" y2="340" fill="none" stroke="#dde2ea" stroke-width="4" /><rect x="140" y="300" width="150" height="80" rx="28" fill="#dfe8f7" /><rect x="320" y="300" width="150" height="80" rx="28" fill="#12397a" /><rect x="500" y="300" width="150" height="80" rx="28" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Ваши регионы</h3><p>Только те регионы и виды лома, что вам нужны.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_region">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Заготовитель из областного центра покупает чёрный лом в трёх соседних областях и возит его на завод. В понедельник он открывает сводку и видит, что в одной из областей закупочная цена на лом 3А за неделю выросла, а в другой стоит на месте. Там же — две новые заявки на продажу: металлоконструкции после демонтажа склада и партия труб от ремонтной организации. Он звонит по второй заявке, пока её не забрал кто-то другой.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Заготовитель из областного центра покупает чёрный лом в трёх соседних областях и возит его на завод. В понедельник он открывает сводку и видит, что в одной из областей закупочная цена на лом 3А за неделю выросла, а в другой стоит на месте. Там же — две новые заявки на продажу: металлоконструкции после демонтажа склада и партия труб от ремонтной организации. Он звонит по второй заявке, пока её не забрал кто-то другой.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="160" x2="1000" y2="160" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="160" r="22" fill="#12397a" /><text x="240" y="250" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">В понедельник</text><text x="600" y="250" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">закупочная цена</text><text x="960" y="250" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">на продажу</text><rect x="120" y="310" width="960" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="400" font-size="36" font-weight="600" fill="#0a1524">открывает сводку</text><text x="170" y="480" font-size="32" fill="#566174">стоит на месте</text><rect x="170" y="560" width="180" height="24" rx="8" fill="#dde2ea" /><rect x="370" y="560" width="140" height="24" rx="8" fill="#b9c3d2" /><rect x="530" y="560" width="220" height="24" rx="8" fill="#dfe8f7" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Тот, кто покупает лом — заготовитель, переработчик, крупный пункт приёма, — каждый день решает две задачи: по какой цене покупать, чтобы не переплатить и не остаться без металла, и где взять следующую партию. Обе задачи решаются звонками, перепиской в отраслевых чатах и сравнением прайсов, которые каждый публикует по-своему.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Тот, кто покупает лом — заготовитель, переработчик, крупный пункт приёма, — каждый день решает две задачи: по какой цене покупать, чтобы не переплатить и не остаться без металла, и где взять следующую партию. Обе задачи решаются звонками, перепиской в отраслевых чатах и сравнением прайсов, которые каждый публикует по-своему.</p>
     <p>Цены на лом заметно различаются по регионам и меняются от недели к неделе. Если не следить за ними, легко узнать о росте цены у соседей тогда, когда сдатчики уже ушли к ним, или, наоборот, переплатить там, где цена опустилась.</p>
     <p>Сервис собирает эту картину в одну сводку. Мы следим за закупочными ценами, которые пункты приёма и переработчики публикуют открыто, и раскладываем их по регионам и видам лома: чёрный по категориям, медь, алюминий, латунь, нержавейка, аккумуляторы.</p>
     <p>Каждую неделю вы видите цены в выбранных регионах и как они изменились по сравнению с прошлой неделей. Если в каком-то регионе цена на нужный вам вид лома сдвинулась сильнее обычного, это видно сразу, без пролистывания десятков прайсов.</p>
@@ -106,31 +140,34 @@
     <p>Данные из сводки можно выгрузить таблицей, чтобы сравнить со своими закупками и посчитать, где выгоднее покупать в следующем месяце.</p>
     <p>Цены в сводке — то, что продавцы и покупатели лома публикуют сами. Это ориентир для решения, а не котировка биржи и не обязательство кого-либо купить или продать лом по этой цене.</p>
     <p>Сервис рассчитан на заготовителей, переработчиков и пункты приёма лома в России. Сейчас он в подготовке: сначала мы проверяем, нужен ли он покупателям лома.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Откуда берутся цены?</h3>
-    <p>Из закупочных цен, которые пункты приёма и переработчики публикуют открыто.</p>
-    <h3>Как часто обновляется сводка?</h3>
-    <p>Раз в неделю: письмо и кабинет с прошлыми неделями.</p>
-    <h3>Что за заявки на продажу?</h3>
-    <p>Заявки продавцов партий лома с видом лома, объёмом и регионом — только по вашим регионам.</p>
-    <h3>Это биржевая котировка?</h3>
-    <p>Нет. Это ориентир по опубликованным ценам, а не обязательство купить или продать.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он покупателям лома.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Откуда берутся цены?</h3><p>Из закупочных цен, которые пункты приёма и переработчики публикуют открыто.</p></div>
+      <div class="split flip"><h3>Как часто обновляется сводка?</h3><p>Раз в неделю: письмо и кабинет с прошлыми неделями.</p></div>
+      <div class="split flip"><h3>Что за заявки на продажу?</h3><p>Заявки продавцов партий лома с видом лома, объёмом и регионом — только по вашим регионам.</p></div>
+      <div class="split flip"><h3>Это биржевая котировка?</h3><p>Нет. Это ориентир по опубликованным ценам, а не обязательство купить или продать.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он покупателям лома.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Выберите свои регионы</h2>
-    <p><label>Сколько лома вы покупаете в месяц<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 50 т</option><option>50–300 т</option><option>300–1 000 т</option><option>Больше 1 000 т</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Выберите свои регионы</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько лома вы покупаете в месяц<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 50 т</option><option>50–300 т</option><option>300–1 000 т</option><option>Больше 1 000 т</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Цены и партии лома</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Сводка опубликованных цен на лом и заявок продавцов. Ориентир для решения, а не биржевая котировка.</p>
+  <p>Сводка опубликованных цен на лом и заявок продавцов. Ориентир для решения, а не биржевая котировка.</p>
 </div></footer>
 
 </body>
